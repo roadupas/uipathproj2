@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="selecdata" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>814.4,1918.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>814.4,1828.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
@@ -76,7 +76,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="566.4,1853.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap:VirtualizedContainerService.HintSize="566.4,1764" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="i" />
     </Sequence.Variables>
@@ -85,7 +85,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="524.8,1760.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="524.8,1671.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="inputFileExist" />
         <Variable x:TypeArguments="x:String" Name="namadataset" />
@@ -95,30 +95,6 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
-        <ui:Click.CursorPosition>
-          <ui:CursorPosition OffsetX="38" OffsetY="10" Position="TopLeft" />
-        </ui:Click.CursorPosition>
-        <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0cda3954-ea63-4988-a9bb-33b5995d8a5a" InformativeScreenshot="84f3e6718bd7bb812afe890455e19345" Selector="&lt;html app='firefox.exe' title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' /&gt;&lt;webctrl aaname='Runtime' parentid='runtime-menu-button' tag='DIV' /&gt;" WaitForReady="COMPLETE">
-            <ui:Target.TimeoutMS>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:Target.TimeoutMS>
-          </ui:Target>
-        </ui:Click.Target>
-      </ui:Click>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
-        <ui:Click.CursorPosition>
-          <ui:CursorPosition OffsetX="13" OffsetY="9" Position="TopLeft" />
-        </ui:Click.CursorPosition>
-        <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6f879a6-88d1-4949-a1e8-16b73e57f18d" InformativeScreenshot="bacc8b2119bc81a71d9aebac34d7af55" Selector="&lt;html app='firefox.exe' title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' /&gt;&lt;webctrl parentid=':1w' tag='DIV' /&gt;" WaitForReady="COMPLETE">
-            <ui:Target.TimeoutMS>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:Target.TimeoutMS>
-          </ui:Target>
-        </ui:Click.Target>
-      </ui:Click>
       <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
         <ui:Click.CursorPosition>
           <ui:CursorPosition Position="Center">
@@ -149,7 +125,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.6,117.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="down" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.6,117.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="Shift" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9704ebcd-f46c-45e6-a8a9-3cbc467b0269">
                   <ui:Target.TimeoutMS>
@@ -172,9 +148,21 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
         <ui:InterruptibleDoWhile.Condition>
-          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;8" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;7" />
         </ui:InterruptibleDoWhile.Condition>
       </ui:InterruptibleDoWhile>
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="483.2,117.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="down" KeyModifiers="None" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b464adf2-a700-49d1-84e8-4feee8ceb9fa">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
       <ui:UiElementExists DisplayName="Element Exists 'INPUT  files-749fef32-1...'" Exists="[inputFileExist]" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
         <ui:UiElementExists.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6857e50c-bee9-41bf-9bbe-3f29cc86795c" InformativeScreenshot="80f19ee61a6e5bb551177baae100427a" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='3' /&gt;&lt;webctrl omit:src='https://*' tag='IFRAME' idx='1' /&gt;&lt;webctrl tag='BUTTON' innertext='Cancel upload' /&gt;">
@@ -215,7 +203,21 @@
           </ui:Target>
         </ui:TypeInto.Target>
       </ui:TypeInto>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;berhasil&quot;]" />
+      <ui:GetValue ContinueOnError="{x:Null}" Value="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+        <ui:GetValue.Target>
+          <ui:Target Element="{x:Null}" Id="63b01311-49ca-4f04-9331-24e655abea88" InformativeScreenshot="481e0dcb2a97c952951850a523f15691" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='3' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;colab-tab-layout-container&amp;gt;colab-tab&amp;gt;div&amp;gt;colab-shaded-scroller&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='cell-x8XYKh3ZkYoi' tag='DIV' idx='1' /&gt;">
+            <ui:Target.ClippingRegion>
+              <ui:Region Rectangle="1, 17, 632, 27" />
+            </ui:Target.ClippingRegion>
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:GetValue.Target>
+      </ui:GetValue>
     </Sequence>
   </Sequence>
 </Activity>
