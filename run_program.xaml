@@ -177,7 +177,7 @@
       </ui:InterruptibleDoWhile>
       <ui:UiElementExists DisplayName="Element Exists 'INPUT  files-749fef32-1...'" Exists="[inputFileExist]" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
         <ui:UiElementExists.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6857e50c-bee9-41bf-9bbe-3f29cc86795c" InformativeScreenshot="80f19ee61a6e5bb551177baae100427a" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='2' /&gt;&lt;webctrl omit:src='https://*' tag='IFRAME' idx='1' /&gt;&lt;webctrl tag='BUTTON' innertext='Cancel upload' /&gt;">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6857e50c-bee9-41bf-9bbe-3f29cc86795c" InformativeScreenshot="80f19ee61a6e5bb551177baae100427a" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='3' /&gt;&lt;webctrl omit:src='https://*' tag='IFRAME' idx='1' /&gt;&lt;webctrl tag='BUTTON' innertext='Cancel upload' /&gt;">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
@@ -194,7 +194,7 @@
               <ui:CursorPosition OffsetX="47" OffsetY="15" Position="TopLeft" />
             </ui:Click.CursorPosition>
             <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="753f4cde-a176-48c0-b9dc-68947ac56aaf" InformativeScreenshot="c130c15ee678d7ff1c1739924cd51c32" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='2' /&gt;&lt;webctrl omit:src='https://*' tag='IFRAME' idx='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="753f4cde-a176-48c0-b9dc-68947ac56aaf" InformativeScreenshot="c130c15ee678d7ff1c1739924cd51c32" Selector="&lt;html app='firefox.exe' omit:title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' idx='3' /&gt;&lt;webctrl omit:src='https://*' tag='IFRAME' idx='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
