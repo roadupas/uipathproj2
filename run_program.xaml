@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="selecdata" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>726,2766</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>726,2865</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
@@ -76,7 +76,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="568,2701" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap:VirtualizedContainerService.HintSize="568,2800" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="i" />
     </Sequence.Variables>
@@ -85,7 +85,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="526,2609" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="526,2708" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="inputFileExist" />
         <Variable x:TypeArguments="x:String" Name="namadataset" />
@@ -281,6 +281,7 @@
           <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;8" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
         </ui:InterruptibleDoWhile.Condition>
       </ui:InterruptibleDoWhile>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;e&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
