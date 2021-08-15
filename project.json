@@ -3,7 +3,7 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "ImagetoPdf.Activities": "[1.0.4]",
+    "BalaReva.Excel.Activities": "[2021.0.0]",
     "UiPath.Excel.Activities": "[2.11.0-preview]",
     "UiPath.Mail.Activities": "[1.11.0-preview]",
     "UiPath.System.Activities": "[21.6.1-preview]",

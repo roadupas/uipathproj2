@@ -1,4 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="data_scraping" sap:VirtualizedContainerService.HintSize="814.4,2191.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="data_scraping" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bes="clr-namespace:BalaReva.Excel.Sheets;assembly=BalaReva.Excel" xmlns:beu="clr-namespace:BalaReva.Excel.Utilities;assembly=BalaReva.Excel.Utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="hasilss" Type="InArgument(ui:Image)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>734.4,2333.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -25,6 +30,10 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>BalaReva.Excel.Sheets</x:String>
+      <x:String>BalaReva.Excel.Base</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -64,15 +73,17 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>BalaReva.Excel</AssemblyReference>
+      <AssemblyReference>BalaReva.Excel.Base</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="558.4,2126.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="681.6,2268.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="data_scraping" sap:VirtualizedContainerService.HintSize="516.8,2033.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="data_scraping" sap:VirtualizedContainerService.HintSize="640,2176" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="datarekomen" />
       </Sequence.Variables>
@@ -81,7 +92,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,1940.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="598.4,2083.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
         </Sequence.Variables>
@@ -90,13 +101,13 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'RevisiAso Page'" sap:VirtualizedContainerService.HintSize="433.6,1848" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="2d7cd12cfb7d992e079ba38f0ce734fb" Selector="&lt;html app='firefox.exe' title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' /&gt;">
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'RevisiAso Page'" sap:VirtualizedContainerService.HintSize="556.8,1990.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="2d7cd12cfb7d992e079ba38f0ce734fb" Selector="&lt;html app='firefox.exe' title='revisiAsociationMarketBasketAnalysis_Grocery.ipynb - Colaboratory' /&gt;">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1700.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="523.2,1843.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="datataberhasil" />
                   <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable2" />
@@ -110,7 +121,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TBODY'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='nilai support' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='nama barang' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" SimulateClick="True">
+                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TBODY'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='nilai support' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='nama barang' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="481.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" SimulateClick="True">
                   <ui:ExtractData.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="efe016e4-28d7-4fcc-9e1b-79cdce6720a3" InformativeScreenshot="692d1f821d831d33799130a2acfeed54" Selector="&lt;webctrl parentid='cell-7StZCxILlTJp' tag='IFRAME' /&gt;&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.TimeoutMS>
@@ -119,17 +130,17 @@
                     </ui:Target>
                   </ui:ExtractData.Target>
                 </ui:ExtractData>
-                <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
-                <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[datataberhasil]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="list barang.xlsx" />
-                <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" ColumnIndex="[0]" DataTable="[datataberhasil]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[datatabelurut]" SortOrder="Descending" />
-                <ui:RemoveDuplicateRows DataTable="[datatabelurut]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[datatabelfixx]" />
-                <ui:WriteRange AddHeaders="False" DataTable="[datatabelfixx]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Masukan Jumlah Barang Yang Ingin Ditampilkan, Maks:&quot;+ datatabelfixx.RowCount.ToString]">
+                <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="481.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
+                <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[datataberhasil]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="481.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="list barang.xlsx" />
+                <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" ColumnIndex="[0]" DataTable="[datataberhasil]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="481.6,241.6" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[datatabelurut]" SortOrder="Descending" />
+                <ui:RemoveDuplicateRows DataTable="[datatabelurut]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="481.6,80.8" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[datatabelfixx]" />
+                <ui:WriteRange AddHeaders="False" DataTable="[datatabelfixx]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="481.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="481.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Masukan Jumlah Barang Yang Ingin Ditampilkan, Maks:&quot;+ datatabelfixx.RowCount.ToString]">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:String">[jumlahbaranguser]</OutArgument>
                   </ui:InputDialog.Result>
                 </ui:InputDialog>
-                <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign sap:VirtualizedContainerService.HintSize="481.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="sd:DataTable">[datatabelfixx2]</OutArgument>
                   </Assign.To>
@@ -137,8 +148,13 @@
                     <InArgument x:TypeArguments="sd:DataTable">[datatabelfixx.AsEnumerable().Take(Integer.Parse(jumlahbaranguser)).CopyToDataTable]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="Delete_1" Path="C:\Users\wawan\Documents\UiPath\folder github\list barang.xlsx" />
-                <ui:WriteRange AddHeaders="False" DataTable="[datatabelfixx2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
+                <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="481.6,80.8" sap2010:WorkflowViewState.IdRef="Delete_1" Path="C:\Users\wawan\Documents\UiPath\folder github\list barang.xlsx" />
+                <ui:WriteRange AddHeaders="False" DataTable="[datatabelfixx2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="481.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" StartingCell="A1" WorkbookPath="list barang.xlsx" />
+                <bes:InsertImage ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" ContinueOnError="False" Delay="3" DisplayName="Insert Image" FilePath="C:\Users\wawan\Documents\UiPath\folder github\list barang.xlsx" sap:VirtualizedContainerService.HintSize="481.6,102.4" sap2010:WorkflowViewState.IdRef="InsertImage_1" ImagePath="C:\Users\wawan\Documents\UiPath\folder github\top sold item.png" SheetName="Sheet1">
+                  <bes:InsertImage.Size>
+                    <beu:ObjectSize Height="300" Left="250" Top="50" Width="500" />
+                  </bes:InsertImage.Size>
+                </bes:InsertImage>
               </Sequence>
             </ActivityAction>
           </ui:BrowserScope.Body>
