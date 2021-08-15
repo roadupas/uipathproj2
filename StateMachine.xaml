@@ -79,7 +79,7 @@
         <av:PointCollection x:Key="ConnectorLocation">330,40.1 360,40.1 360,40.4 380,40.4</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID2" DisplayName="initial" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID2" DisplayName="Initial state" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="open_file_ipynb.xaml">
           <ui:InvokeWorkflowFile.Arguments>
@@ -104,7 +104,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID0" DisplayName="State" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_2">
+            <State x:Name="__ReferenceID0" DisplayName="Dataset Processing" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
                 <Sequence sap:VirtualizedContainerService.HintSize="375.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -114,12 +114,8 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="run_program.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="selecdata">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="selecdata" />
-                      </InArgument>
-                      <OutArgument x:TypeArguments="ui:Image" x:Key="hasilss">
-                        <mva:VisualBasicReference x:TypeArguments="ui:Image" ExpressionText="hasilss" />
-                      </OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="selecdata">[selecdata]</InArgument>
+                      <OutArgument x:TypeArguments="ui:Image" x:Key="hasilss">[hasilss]</OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                 </Sequence>
@@ -141,13 +137,11 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.To>
-                    <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="378.4,227.2" sap2010:WorkflowViewState.IdRef="State_3" IsFinal="True">
+                    <State x:Name="__ReferenceID1" DisplayName="Data scraping" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_3" IsFinal="True">
                       <State.Entry>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke data_scraping workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="data_scraping.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="ui:Image" x:Key="hasilss">
-                              <mva:VisualBasicValue x:TypeArguments="ui:Image" ExpressionText="hasilss" />
-                            </InArgument>
+                            <InArgument x:TypeArguments="ui:Image" x:Key="hasilss">[hasilss]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </State.Entry>

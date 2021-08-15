@@ -5,7 +5,6 @@
   "dependencies": {
     "BalaReva.Excel.Activities": "[2021.0.0]",
     "UiPath.Excel.Activities": "[2.11.0-preview]",
-    "UiPath.Mail.Activities": "[1.11.0-preview]",
     "UiPath.System.Activities": "[21.6.1-preview]",
     "UiPath.UIAutomation.Activities": "[21.6.1-preview]"
   },
