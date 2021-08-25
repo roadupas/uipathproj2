@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="selecdata" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>592,2420</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>734.4,2432</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -65,9 +65,10 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="602,2355" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="600.8,2367.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="fileloc" />
     </Sequence.Variables>
@@ -76,7 +77,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="560,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="d" KeyModifiers="Win">
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="559.2,117.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="d" KeyModifiers="Win">
       <ui:SendHotkey.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="1778ddf3-79bb-453c-a2a8-700e8ba88e3e">
           <ui:Target.TimeoutMS>
@@ -88,17 +89,17 @@
         </ui:Target>
       </ui:SendHotkey.Target>
     </ui:SendHotkey>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Pilih file ipnyb&quot;]" />
-    <ui:SelectFile DisplayName="select file phyton" Filter="All files|*.*" sap:VirtualizedContainerService.HintSize="560,137" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[fileloc]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Pilih dataset yang akan diolah&quot;]" />
-    <ui:SelectFile DisplayName="Select file dataset" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="560,137" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[selecdata]" />
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="560,1555" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://colab.research.google.com">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="559.2,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Pilih file ipnyb&quot;]" />
+    <ui:SelectFile DisplayName="select file phyton" Filter="All files|*.*" sap:VirtualizedContainerService.HintSize="559.2,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[fileloc]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="559.2,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Pilih dataset yang akan diolah (Harus berbentuk .Csv)&quot;]" />
+    <ui:SelectFile DisplayName="Select file dataset" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="559.2,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[selecdata]" />
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="559.2,1558.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://colab.research.google.com">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,1454" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="525.6,1456" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:UiElement" Name="algoritma" />
               <Variable x:TypeArguments="ui:UiElement" Name="adaelement" />
@@ -110,7 +111,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'upload'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'upload'" sap:VirtualizedContainerService.HintSize="484,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -129,7 +130,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:UiElementExists DisplayName="Element Exists 'browse'" Exists="[uploadBrowser]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Element Exists 'browse'" Exists="[uploadBrowser]" sap:VirtualizedContainerService.HintSize="484,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="61c1744a-9bad-40d2-828a-fd4ee4f7dfe3" InformativeScreenshot="074af978fd29880b67d170bb6319e463" Selector="&lt;webctrl tag='INPUT' /&gt;" TimeoutMS="5000">
                   <ui:Target.WaitForReady>
